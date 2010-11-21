@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["jonnie@cleverna.me"]
   s.homepage    = "http://rubygems.org/gems/soundcloud-embed_tag"
   s.summary     = %q{Automatically replace bbcode style tags with soundcloud embeds}
-  s.description = %q{Automatically replace bbcode style tags with soundcloud embeds}
+  s.description = %q{Automatically replace bbcode style tags with soundcloud embedsf}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
