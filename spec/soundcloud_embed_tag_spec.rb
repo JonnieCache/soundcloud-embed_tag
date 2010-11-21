@@ -51,4 +51,16 @@ describe Soundcloud::EmbedTag do
     end
     
   end
+  
+  context 'with unset key' do
+    before :all do
+      Soundcloud::EmbedTag.config[:consumer_key] = nil
+    end
+    
+    it 'returns an exception when getting a track' do
+      lambda {Soundcloud::EmbedTag.get_track('http://soundcloud.com/foo/bar')}.should raise_error Soundcloud::EmbedTag::ConsumerKeyError
+    end
+    
+    
+  end
 end

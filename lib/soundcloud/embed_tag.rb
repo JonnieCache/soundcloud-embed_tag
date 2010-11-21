@@ -15,6 +15,7 @@ module Soundcloud
       end
       
       def get_track(api_url)
+        raise ConsumerKeyError unless config[:consumer_key]
         HTTParty.get(api_url).parsed_response
       end
       
