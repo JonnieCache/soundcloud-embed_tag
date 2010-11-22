@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.require_paths = ["lib"]
   s.add_dependency 'httparty', '~> 0'
+  s.add_dependency 'yajl-ruby'
   s.add_development_dependency 'rspec', '~> 2'
   s.add_development_dependency 'simplecov', '~> 0'
 end
