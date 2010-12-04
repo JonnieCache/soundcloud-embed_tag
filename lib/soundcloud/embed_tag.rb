@@ -23,7 +23,7 @@ module Soundcloud
         track = get_track(api_url(track_url))
         id = track['id']
         
-        %{<object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{id}&amp;show_comments=true&amp;auto_play=false"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{id}&amp;show_comments=true&amp;auto_play=false" type="application/x-shockwave-flash" width="100%"></embed> </object>}
+        %{<object height="81" width="100%"> <param name="movie" value="//player.soundcloud.com/player.swf?url=%2F%2Fapi.soundcloud.com%2Ftracks%2F#{id}&amp;show_comments=true&amp;auto_play=false"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="//player.soundcloud.com/player.swf?url=%2F%2Fapi.soundcloud.com%2Ftracks%2F#{id}&amp;show_comments=true&amp;auto_play=false" type="application/x-shockwave-flash" width="100%"></embed> </object>}
       end
       
       def replace_tags(string)
